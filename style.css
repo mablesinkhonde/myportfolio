@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+
+.header-section {
+  position: relative;
+  height: 300px;  
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.bg-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  filter: brightness(0.8);
+  margin-bottom: 5px;
+}
+
+.profile-container {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 2rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.intro-triangle p {
+  text-align: center;      
+  margin: 0 auto;          
+  line-height: 1.6;       
+  font-size: 25px;  
+  font-family: Arial, Helvetica, sans-serif;      
+  max-width: fit-content;  
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 10px 40px;
+  padding-top: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid black;
+}
+
+
+.bio-section {
+  margin-top: 80px auto 5 px auto;
+  padding: 20px;
+}
+
+.bio {
+  font-size: 16px;
+  color: white;
+  background-color: #3c5a32;
+  border: 2px dotted #d1d2d0;
+  padding: 10px;
+  max-width: 400px;
+  margin: 5px auto;
+}
+
+/* Dynamic section content */
+.content-section {
+  display: none; 
+  position: absolute; 
+  bottom: 5px;        
+  right: 5px;      
+  padding: 15px;
+  text-align: left;
+  background-color: #a3a3a3;  
+  color: black;            
+  border: 1px solid #013113;  
+  max-width: 300px;        
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+
+footer {
+  margin-top: 22px;
+  padding: 5px;
+  background: #f4f4f4;
+  font-size: 10px;
+}

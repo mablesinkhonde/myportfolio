@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mable Sinkhonde | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header-section">
+    <img src="background.jpg" alt="Background" class="bg-image">
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Mable Sinkhonde" class="profile-pic">
+    </div>
+  </div>
+
+  <!-- Navigation aligned to right -->
+  <nav class="navbar">
+    <a href="#" data-target="cv">CV</a>
+    <a href="#" data-target="contact">Contact</a>
+    <a href="#" data-target="about">About</a>
+  </nav>
+
+  <h1 class="heading">welcome to my portfolio</h1>
+  <div class="intro-triangle">
+  <p>I am a Passionate Web Developer, Based in Blantyre, Malawi </p>
+  <p> I specialize in building responsive,user-friendly websites and web applications </p>
+  <p>I am always eager to learnnew technologies and create digital</p>
+  <p> solutions that make a difference</p>
+  </div>
+
+  <div id="cv" class="content-section">
+    <h2>Curriculum Vitae</h2>
+    <p><strong>Education:</strong> IT student at MUBAS</p>
+    <p><strong>Skills:</strong> Problem solving, teamwork, communication, programming, leadership</p>
+    <p><strong>Experience:</strong> Intern at Tech Solutions (software development tasks), Volunteer at Local Community Center (digital literacy programs, teamwork, outreach activities)</p>
+  </div>
+
+  <div id="contact" class="content-section">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> mablesinkhonde7@gmail.com</p>
+    <p><strong>Phone:</strong> +265 991 625 900</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mable-sinkhonde-75931b372" target="_blank">linkedin.com/in/mablesinkhonde</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/mablesinkhonde" target="_blank">github.com/mablesinkhonde</a></p>
+  </div>
+
+  <div id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>I am an IT student at MUBAS with a passion for technology and problem solving.</p>
+    <p>I have steadily grown as a web developer with strong skills in HTML, CSS, JavaScript, and Java.</p>
+  </div>
+
+  <!-- Biography stays the same -->
+  <section class="bio-section">
+    <p class="bio">
+      Mable Sinkhonde — IT student at MUBAS.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mable Sinkhonde. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('.navbar a');
+    const sections = document.querySelectorAll('.content-section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const targetId = link.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+        const isVisible = targetSection.style.display === 'block';
+
+        // Hide all
+        sections.forEach(sec => sec.style.display = 'none');
+
+        // Toggle the clicked one
+        targetSection.style.display = isVisible ? 'none' : 'block';
+      });
+    });
+
+    // Hide sections when clicking outside
+    document.addEventListener('click', () => {
+      sections.forEach(sec => sec.style.display = 'none');
+    });
+
+    // Prevent closing when clicking inside the content box
+    sections.forEach(section => {
+      section.addEventListener('click', (e) => e.stopPropagation());
+    });
+  </script>
+
+</body>
+</html>
