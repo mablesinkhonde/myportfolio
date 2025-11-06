@@ -1,4 +1,4 @@
-/* ===== GENERAL STYLING ===== */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== HEADER SECTION ===== */
 .header-section {
   position: relative;
   width: 100%;
@@ -46,7 +45,7 @@ body {
   object-fit: cover;
 }
 
-/* ===== NAVBAR ===== */
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -68,7 +67,7 @@ body {
   
 }
 
-/* ===== INTRO SECTION ===== */
+
 .intro {
   text-align: center;
   padding: 40px 20px;
@@ -86,7 +85,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== CONTENT SECTIONS ===== */
+
 .content-section {
   display: none;
   padding: 50px 20px;
@@ -99,7 +98,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===== PROJECT CARDS ===== */
+
 .project-card {
   background: rgba(15, 47, 84, 0.7);
   border: 1px solid #ca569f;
@@ -116,7 +115,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   text-align: center;
   background: rgba(15, 47, 84, 0.7);;
@@ -134,7 +133,7 @@ footer {
   color:#ca569f;
   font-size: 0.9rem;
 }
-/* ===== CV & ABOUT SECTIONS AS CARDS ===== */
+
 .cv-card, .about-card {
   background: rgba(15, 47, 84, 0.7);
   border: 1px solid #ca569f;
