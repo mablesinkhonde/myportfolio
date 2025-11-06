@@ -1,98 +1,138 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mable Sinkhonde | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="header-section">
-    <img src="background.jpg" alt="Background" class="bg-image">
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Mable Sinkhonde" class="profile-pic">
+  <!-- Header Section with Image Slider -->
+  <header class="header-section">
+    <div class="header-slider">
+      <img src="imageyane.jpg" class="active" alt="Header Image 1" />
+      <img src="profa.jpg" alt="Header Image 2" />
+      <img src="pulofailo.jpg" alt="Header Image 3" />
     </div>
-  </div>
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Mable Sinkhonde" class="profile-pic" />
+    </div>
+  </header>
 
-  <!-- Navigation aligned to right -->
-  <nav class="navbar">
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#" data-target="projects">Projects</a>
     <a href="#" data-target="cv">CV</a>
     <a href="#" data-target="contact">Contact</a>
     <a href="#" data-target="about">About</a>
   </nav>
 
-  <h1 class="heading">welcome to my portfolio</h1>
-  <div class="intro-triangle">
-  <p>I am a Passionate Web Developer, Based in Blantyre, Malawi </p>
-  <p> I specialize in building responsive,user-friendly websites and web applications </p>
-  <p>I am always eager to learnnew technologies and create digital</p>
-  <p> solutions that make a difference</p>
-  </div>
+  <!-- Introduction -->
+  <section class="intro">
+    <h1 class="heading">Welcome to My Portfolio</h1>
+    <div class="intro-triangle">
+      <p>I am a passionate web developer based in Blantyre, Malawi.</p>
+      <p>I specialize in building responsive, user-friendly websites and web applications.</p>
+      <p>I’m always eager to learn new technologies and create impactful digital solutions.</p>
+    </div>
+  </section>
 
-  <div id="cv" class="content-section">
+  <!-- Projects Section -->
+  <section id="projects" class="content-section">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>💅 Code Blossom</h3>
+      <p>A nail salon booking platform that allows clients to book appointments online and manage salon schedules efficiently. Built with HTML, CSS, and JavaScript.</p>
+      <p><strong>Role:</strong> Co-developer</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🏙 UrbanSight</h3>
+      <p>An urban land use classification and visualization dashboard that identifies vegetation, buildings, and bare land using satellite data.</p>
+      <p><strong>Tech Stack:</strong> HTML, JavaScript, CSS, and Map APIs.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🚗 ESCOM Transport Pool Management System</h3>
+      <p>A Laravel-based system that digitizes vehicle request and approval processes at ESCOM. It manages vehicles, drivers, fuel logs, and maintenance history.</p>
+      <p><strong>Role:</strong> Lead Developer</p>
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section id="cv" class="content-section">
     <h2>Curriculum Vitae</h2>
     <p><strong>Education:</strong> IT student at MUBAS</p>
     <p><strong>Skills:</strong> Problem solving, teamwork, communication, programming, leadership</p>
-    <p><strong>Experience:</strong> Intern at Tech Solutions (software development tasks), Volunteer at Local Community Center (digital literacy programs, teamwork, outreach activities)</p>
-  </div>
+    <p><strong>Experience:</strong> Intern at Tech Solutions (software development tasks),
+      Volunteer at Local Community Center (digital literacy programs, teamwork, outreach activities)
+    </p>
+  </section>
 
-  <div id="contact" class="content-section">
+  <!-- Contact Section -->
+  <section id="contact" class="content-section">
     <h2>Contact Me</h2>
-    <p><strong>Email:</strong> mablesinkhonde7@gmail.com</p>
+    <p><strong>Email:</strong> <a href="mailto:mablesinkhonde7@gmail.com">mablesinkhonde7@gmail.com</a></p>
     <p><strong>Phone:</strong> +265 991 625 900</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mable-sinkhonde-75931b372" target="_blank">linkedin.com/in/mablesinkhonde</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/mablesinkhonde" target="_blank">github.com/mablesinkhonde</a></p>
-  </div>
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/mable-sinkhonde-75931b372" target="_blank">
+        linkedin.com/in/mablesinkhonde
+      </a>
+    </p>
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/mablesinkhonde" target="_blank">
+        github.com/mablesinkhonde
+      </a>
+    </p>
+  </section>
 
-  <div id="about" class="content-section">
+  <!-- About Section -->
+  <section id="about" class="content-section">
     <h2>About Me</h2>
     <p>I am an IT student at MUBAS with a passion for technology and problem solving.</p>
-    <p>I have steadily grown as a web developer with strong skills in HTML, CSS, JavaScript, and Java.</p>
-  </div>
+    <p>I have steadily grown as a web developer with strong skills in HTML, CSS, JavaScript, PHP, and Java.</p>
+    <p>I enjoy transforming creative ideas into working solutions that solve real-world problems.</p>
+  </section>
 
-  <!-- Biography stays the same -->
   <section class="bio-section">
     <p class="bio">
-      Mable Sinkhonde — IT student at MUBAS.
+      © 2025 Mable Sinkhonde — IT Student | Web Developer | Innovator
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Mable Sinkhonde. All rights reserved.</p>
+    <p>All rights reserved.</p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
     const navLinks = document.querySelectorAll('.navbar a');
     const sections = document.querySelectorAll('.content-section');
 
+    sections.forEach(sec => sec.style.display = 'none');
+
     navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', e => {
         e.preventDefault();
-        e.stopPropagation();
-
-        const targetId = link.getAttribute('data-target');
-        const targetSection = document.getElementById(targetId);
-        const isVisible = targetSection.style.display === 'block';
-
-        // Hide all
+        const target = document.getElementById(link.getAttribute('data-target'));
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
         sections.forEach(sec => sec.style.display = 'none');
-
-        // Toggle the clicked one
-        targetSection.style.display = isVisible ? 'none' : 'block';
+        target.style.display = 'block';
+        target.scrollIntoView({ behavior: 'smooth' });
       });
     });
 
-    // Hide sections when clicking outside
-    document.addEventListener('click', () => {
-      sections.forEach(sec => sec.style.display = 'none');
-    });
-
-    // Prevent closing when clicking inside the content box
-    sections.forEach(section => {
-      section.addEventListener('click', (e) => e.stopPropagation());
-    });
+    // Header image slider
+    const headerImages = document.querySelectorAll('.header-slider img');
+    let index = 0;
+    setInterval(() => {
+      headerImages[index].classList.remove('active');
+      index = (index + 1) % headerImages.length;
+      headerImages[index].classList.add('active');
+    }, 4000);
   </script>
-
 </body>
 </html>
