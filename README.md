@@ -85,7 +85,7 @@ GitHub: @mablesinkhonde
 
 LinkedIn: linkedin.com/in/mablesinkhonde
 
-Email: mablesinkhonde@example.com
+Email: mablesinkhonde7gmail.com
 
 # Version History
 
