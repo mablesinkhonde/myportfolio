@@ -1,142 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mable Sinkhonde | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mable Portfolio - Interactive & Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+ 
 
-  <!-- Header Section with Image Slider -->
-  <header class="header-section">
-    <div class="header-slider">
-      <img src="inde.jpg" class="active" alt="Header Image 1" />
-      <img src="enya.jpg" alt="Header Image 2" />
-      <img src="iyilast.jpg" alt="Header Image 3" />
-    </div>
+<body>
+    <!-- profile picture -->
     <div class="profile-container">
       <img src="profile.jpg" alt="Mable Sinkhonde" class="profile-pic" />
     </div>
-  </header>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <a href="#" data-target="projects">Projects</a>
-    <a href="#" data-target="cv">CV</a>
-    <a href="#" data-target="contact">Contact</a>
-    <a href="#" data-target="about">About</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Mable Sinkhonde Portfolio</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Mable <br> your Developer</h1>
+            <p class="hero-subtitle">Crafting beautiful and interactive web experiences</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-box box-1"></div>
+            <div class="floating-box box-2"></div>
+            <div class="floating-box box-3"></div>
+        </div>
+    </section>
 
-  <!-- Introduction -->
-  <section class="intro">
-    <h1 class="heading">Welcome to My Portfolio</h1>
-    <div class="intro-triangle">
-      <p>I am a passionate web developer based in Blantyre, Malawi.</p>
-      <p>I specialize in building responsive, user-friendly websites and web applications.</p>
-      <p>I’m always eager to learn new technologies and create impactful digital solutions.</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm passionate about creating interactive web applications that solve real problems. 
+                    With expertise in HTML, CSS, and JavaScript, I build responsive and user-friendly websites.
+                </p>
+                <p class="about-text">
+                    My journey in web development has taught me the importance of clean code, intuitive design, 
+                    and continuous learning. I love collaborating with teams and turning ideas into reality.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="content-section">
-    <h2>My Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3 class="project-title">Nail salon booking platform</h3>
+                    <p class="project-description">
+                        Platform that allows clients to book appointments online and manage salon schedules efficiently.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
 
-    <div class="project-card">
-      <h3>💅 Code Blossom</h3>
-      <p>A nail salon booking platform that allows clients to book appointments online and manage salon schedules efficiently. Built with HTML, CSS, and JavaScript.</p>
-      <p><strong>Role:</strong> Co-developer</p>
-    </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3 class="project-title">UrbanSight Web App</h3>
+                    <p class="project-description">
+                        An urban land use classification and visualization dashboard that identifies vegetation, buildings, and bare land using satellite data
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
 
-    <div class="project-card">
-      <h3>🏙 UrbanSight</h3>
-      <p>An urban land use classification and visualization dashboard that identifies vegetation, buildings, and bare land using satellite data.</p>
-      <p><strong>Tech Stack:</strong> HTML, JavaScript, CSS, and Map APIs.</p>
-    </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3 class="project-title">Transport pool management system</h3>
+                    <p class="project-description">
+                        Digitized vehicle request and approval processes at ESCOM.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Local Storage</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <h3>🚗 ESCOM Transport Pool Management System</h3>
-      <p>A Laravel-based system that digitizes vehicle request and approval processes at ESCOM. It manages vehicles, drivers, fuel logs, and maintenance history.</p>
-      <p><strong>Role:</strong> Lead Developer</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>HTML & CSS</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>JavaScript</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Responsive Design</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- CV Section -->
-  <section id="cv" class="content-section">
-    <div class="cv-card">
-    <h2>Curriculum Vitae</h2>
-    <p><strong>Education:</strong> IT student at MUBAS</p>
-    <p><strong>Skills:</strong> Problem solving, teamwork, communication, programming, leadership</p>
-    <p><strong>Experience:</strong> Intern at Tech Solutions (software development tasks),
-      Volunteer at Local Community Center (digital literacy programs, teamwork, outreach activities)
-    </p>
-    </div>
-  </section>
+                <div class="skill-item">
+                    <h3>Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>DOM Manipulation</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>API Integration</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Version Control</span>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="content-section">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:mablesinkhonde7@gmail.com">mablesinkhonde7@gmail.com</a></p>
-    <p><strong>Phone:</strong> +265 991 625 900</p>
-    <p><strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/in/mable-sinkhonde-75931b372" target="_blank">
-        linkedin.com/in/mablesinkhonde
-      </a>
-    </p>
-    <p><strong>GitHub:</strong> 
-      <a href="https://github.com/mablesinkhonde" target="_blank">
-        github.com/mablesinkhonde
-      </a>
-    </p>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'd love to hear from you. Let's create something amazing together!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        placeholder="Your Name" 
+                        class="form-input" 
+                        id="nameInput"
+                        required
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
 
-  <!-- About Section -->
-  <section id="about" class="content-section">
-    <div class="about-card">
-    <h2>About Me</h2>
-    <p>I am an IT student at MUBAS with a passion for technology and problem solving.</p>
-    <p>I have steadily grown as a web developer with strong skills in HTML, CSS, JavaScript, PHP, and Java.</p>
-    <p>I enjoy transforming creative ideas into working solutions that solve real-world problems.</p>
-    </div>
-  </section>
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        placeholder="Your Email" 
+                        class="form-input" 
+                        id="emailInput"
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
 
-  <section class="bio-section">
-    <p class="bio">
-      © 2025 Mable Sinkhonde — IT Student | Web Developer | Innovator
-    </p>
-  </section>
+                <div class="form-group">
+                    <textarea 
+                        placeholder="Your Message" 
+                        class="form-input" 
+                        rows="5"
+                        id="messageInput"
+                        required
+                    ></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
 
-  <footer>
-    <p>All rights reserved.</p>
-  </footer>
+                <button type="submit" class="submit-button">Send Message</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
 
-  <!-- JavaScript -->
-  <script>
-    const navLinks = document.querySelectorAll('.navbar a');
-    const sections = document.querySelectorAll('.content-section');
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
-    sections.forEach(sec => sec.style.display = 'none');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.getElementById(link.getAttribute('data-target'));
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-        sections.forEach(sec => sec.style.display = 'none');
-        target.style.display = 'block';
-        target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Header image slider
-    const headerImages = document.querySelectorAll('.header-slider img');
-    let index = 0;
-    setInterval(() => {
-      headerImages[index].classList.remove('active');
-      index = (index + 1) % headerImages.length;
-      headerImages[index].classList.add('active');
-    }, 4000);
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
