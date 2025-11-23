@@ -87,15 +87,6 @@ LinkedIn: linkedin.com/in/mablesinkhonde
 
 Email: mablesinkhonde7gmail.com
 
-# Version History
-
-1.1
-
-Improved background image slider
-
-Added card layout for CV and About sections
-
-Enhanced project image carousel
 
 1.0
 
